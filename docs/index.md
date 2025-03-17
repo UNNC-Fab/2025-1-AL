@@ -8,18 +8,14 @@ hero:
   tagline: This is my documentation for the Fab Academy.
   actions:
     - theme: brand
-      text: Get Start
-      link: /markdown-examples
+      text: Get start
+      link: /weeklyassignments/week1
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Contact me 
+      link: /about/about#Contact me
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Copyright 2025 Ao Liu - Creative Commons Attribution Non Commercial
+    details: This webpage is powered by VitePress ( https://vitepress.vuejs.org/ ).
 ---
 

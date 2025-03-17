@@ -9,19 +9,22 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'About', link: '/about' },
-      { text: 'Assignments', link: '/markdown-examples' }
+      { text: 'About', link: '/about/about' },
+      { text: 'Assignments', link: '/weeklyassignments/week1' },
+      { text: 'Project', link: '/project/project' }
     ],
 
-    sidebar: [
-      {
-        text: 'Assignments',
-        items: [
-          { text: 'Get Start', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
+    sidebar: {
+      '/week': [
+        {
+          text: 'Assignments',
+          items: [
+            { text: 'Week1.Project Management', link: '/weeklyassignments/week1' },
+            { text: 'Week2.Embedded Programming', link: '/weeklyassignments/week2' }
+          ]
+        }
+      ]
+    },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
