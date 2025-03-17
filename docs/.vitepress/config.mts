@@ -17,6 +17,12 @@ export default defineConfig({
     sidebar: {
       '/week': [
         {
+          text: 'Project',
+          items: [
+            { text: 'Fianl Project', link: '/project/peoject' },
+          ]
+        }
+        {
           text: 'Assignments',
           items: [
             { text: 'Week1.Project Management', link: '/weeklyassignments/week1' },
