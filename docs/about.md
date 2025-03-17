@@ -8,5 +8,5 @@ Fab Academy is a digital manufacturing course that lasts for several months and 
 
 ## Contact me
 
-- Email: [ao.liu@nottingham.edu.cn](ao.liu@nottingham.edu.cn)
+- Email: [ao.liu@nottingham.edu.cn](mailto:ao.liu@nottingham.edu.cn)
 - GitHub: [UNNC-Fab](https://github.com/UNNC-Fab/2025-1-AL)
