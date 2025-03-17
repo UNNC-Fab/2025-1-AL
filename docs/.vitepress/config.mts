@@ -3,8 +3,8 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: '/2025-1-AL/',
-  title: "My Awesome Project",
-  description: "A VitePress Site",
+  title: "Fablab Academy",
+  description: "Welcome to Ao Liu's Fab Academy 2025 site!",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [

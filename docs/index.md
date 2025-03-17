@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "My Awesome Project"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: "Fablab Academy"
+  text: "Welcome to Ao Liu's Fab Academy 2025 site!"
+  tagline: This is my documentation for the Fab Academy.
   actions:
     - theme: brand
       text: Markdown Examples
