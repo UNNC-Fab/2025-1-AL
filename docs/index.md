@@ -8,7 +8,7 @@ hero:
   tagline: This is my documentation for the Fab Academy.
   actions:
     - theme: brand
-      text: Markdown Examples
+      text: Get Start
       link: /markdown-examples
     - theme: alt
       text: API Examples
