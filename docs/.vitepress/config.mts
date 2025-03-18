@@ -21,7 +21,7 @@ export default defineConfig({
           items: [
             { text: 'Fianl Project', link: '/project/peoject' },
           ]
-        }
+        },
         {
           text: 'Assignments',
           items: [
