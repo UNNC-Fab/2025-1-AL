@@ -1,6 +1,23 @@
-# Embedded Programming
-This week I have mainly studied about how to use ESP32C3. I have browse through the [Guidancesheet](https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/) of my ESP32C3 and learned programmed a microcontroller board.
-## Getting Started with Seeed Studio XIAO ESP32C3
+# Week 2-Embedded Programming
+
+## Assignments of the Week
+1. Microcontroller Study:
+- Review and analyze microcontroller datasheet
+2. Program Development:
+-  Write a microcontroller program that:
+Implements device interaction (local I/O)
+Establishes communication (wired/wireless)
+Includes simulation testing
+3. Extra Credit Options:
+- Hardware Implementation:
+Test program on actual development board
+- Development Exploration:
+Experiment with multiple programming languages
+Try different development environments
+
+## 1.Getting Started with Seeed Studio XIAO ESP32C3
+Reference:
+https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/
 ### Features 
 Seeed Studio XIAO ESP32C3 is an IoT mini development board based on the Espressif ESP32-C3 WiFi/Bluetooth dual-mode chip, featuring a 32-bit RISC-V CPU that delivers powerful computing performance with its efficient architecture.the key features & layouts is listed below:
 ![](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/AL/20250317180532540.png)
@@ -17,7 +34,7 @@ Seeed Studio XIAO ESP32C3 is an IoT mini development board based on the Espressi
 - Rich interfaces: 1xI2C, 1xSPI, 2xUART, 11xGPIO(PWM), 4xADC, 1xJTAG bonding pad interface
 - Single-sided components, surface mounting design
 
-### Component overview
+### 2.Component overview
  ![](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/AL/20250317181336629.png)
  ![](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/AL/20250317181348606.png)
 
@@ -30,7 +47,7 @@ Seeed Studio XIAO ESP32C3 is an IoT mini development board based on the Espressi
  According to the chip manual of ESP32C3, GPIO2, GPIO8 and GPIO9 in the chip are Strapping Pins, the high and low level configurations of these pins may allow the chip to enter into different Boot modes, please pay attention to this point when you use these pins, otherwise it may prevent your XIAO from uploading or executing the program all the time.
  ![](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/AL/20250317181552807.png)
 
-## Try Seeed Studio XIAO ESP32C3
+## 2.Try Seeed Studio XIAO ESP32C3
 
 ### Software
 We can download Arduino IDE from [here](https://www.arduino.cc/) according to your PC's version and then install by yourself.

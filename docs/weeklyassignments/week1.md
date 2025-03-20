@@ -1,9 +1,9 @@
 # Week 1 - Project Management
 
 ## Assignments of the Week
-- Read, sign the student/instructor/lab agreements, and commit to your repos
-- Work through a git tutorial
-- Build a personal site in the class archive describing you and your final project
+1. Read, sign the student/instructor/lab agreements, and commit to your repos
+2. Work through a git tutorial
+3. Build a personal site in the class archive describing you and your final project
 
 ### Steps:
 1. Install Git
@@ -86,7 +86,7 @@ export default defineConfig({
 })
 
 ```
-## 4. Deploy to GitLab
+## 4.Deploy to GitLab
 - **Use Git to commit and push changes**
 Use Git to commit and push changes to the remote repository on GitHub:
 ```bash
@@ -164,6 +164,3 @@ jobs:
         uses: actions/deploy-pages@v4
 ```
 
-
-
-![](https://cdn.jsdelivr.net/gh/aliu0926/imageuploadservice/img/20250306162603447.png)
