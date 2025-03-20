@@ -26,7 +26,8 @@ export default defineConfig({
           text: 'Assignments',
           items: [
             { text: 'Week1.Project Management', link: '/weeklyassignments/week1' },
-            { text: 'Week2.Embedded Programming', link: '/weeklyassignments/week2' }
+            { text: 'Week2.Embedded Programming', link: '/weeklyassignments/week2' },
+            { text: 'Week3.Electronics Design', link: '/weeklyassignments/week3' }
           ]
         }
       ]
