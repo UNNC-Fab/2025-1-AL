@@ -7,7 +7,7 @@
 4. Extra credit: design a case around your design
 
 ---
-This week, I plan to design and manufacture an expansion board using Seeed Studio XIAO ESP32-C3, which can accommodate four A4988 stepper motor drivers, enabling independent control of four stepper motors. Through this practice, I will delve into using LCEDA for PCB design, covering component selection, schematic drawing, circuit layout optimization, and generating 3D views and manufacturing files to ensure the board’s producibility and stability.
+This week, I plan to design and manufacture an expansion board using Seeed Studio XIAO ESP32-C3, which can accommodate A4988 stepper motor driver, enabling control of stepper motor. Through this practice, I will delve into using LCEDA for PCB design, covering component selection, schematic drawing, circuit layout optimization, and generating 3D views and manufacturing files to ensure the board’s producibility and stability.
 
 ---
 ## PCB Design Process
@@ -37,15 +37,10 @@ Below are the pin definitions for XIAO ESP32-C3 and A4988. Based on these defini
 ### 3.2 A4988 Technical Specifications
 Here are the technical specifications for the A4988:
 | Parameter Type | Specification |
-| ----- | ----- |
 | Motor Output Voltage | 8V – 35V |
-| ----- | ----- |
 | Logic Input Voltage | 3V – 5.5V |
-| ----- | ----- |
 | Continuous Current per Phase | 1A |
-| ----- | ----- |
 | Maximum Current per Phase | 2A |
-| ----- | ----- |
 | Microstepping Resolution | Full, 1/2, 1/4, 1/8, 1/16 |
 
 ### 3.3Power System
@@ -76,32 +71,57 @@ A4988 has two control input pins - STEP and DIR.
 ## 4.Pin Assignment Plan
 Below is the pin connection plan: 
 | Parameter Type | Specification |
-| ----- | ----- |
 | D0 | Motor 1 STEP |
-| ----- | ----- |
 | D1 | Motor 1 DIR |
-| ----- | ----- |
 | D2 | Motor 2 STEP |
-| ----- | ----- |
 | D3 | Motor 2 DIR |
-| ----- | ----- |
 | D4 | Motor 3 STEP |
-| ----- | ----- |
 | D5 | Motor 3 DIR |
-| ----- | ----- |
 | D6 | Motor 4 STEP |
-| ----- | ----- |
 | D7 | Motor 4 DIR |
-| ----- | ----- |
 | GND | All A4988 ENABLE |
-| ----- | ----- |
 | GND | All A4988 GND |
-| ----- | ----- |
 | 5V | All A4988 VDD |
 
 ## 5.Circuit Design Implementation
 ### 5.1Schematic Design
-1. Power Area Wiring
-First, we wire the power section to ensure proper VCC and GND connections.
-![](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/AL/20250320161038439.png)
+1. Component Placement
+Open your existing schematic in LCEDA. Search for the symbols of switches, resistors, and diodes in the component library. If the required components are not in the library, you need to create custom symbols for them.
+Drag and drop the new components onto the schematic canvas.
+![](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/AL/20250325111103457.png)
 2. Pin Connections
+Connect the pins of these new components to other existing components in the schematic, such as the XIAO ESP32 - C3, A4988 driver, or other related parts.
+![](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/AL/20250325111216060.png)
+3. Schematic Review
+Check the updated schematic for any incorrect connections, short - circuits, or missing connections. Use the error - checking tools in LCEDA to identify and fix potential issues.
+### 5.2PCB Design Update
+1. Generate PCB from Updated Schematic
+After finalizing the schematic with the new components, use LCEDA's function to transfer the updated schematic information to the PCB design area.
+![](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/AL/20250325111414831.png)
+![](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/AL/20250325111635007.png)
+![](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/AL/20250325111723960.png)
+2. Component Placement on PCB
+Place the newly added switches and resistors on the PCB layout. Consider factors such as signal integrity, heat dissipation, and ease of assembly. Ensure that there is enough space for the new components and that they do not interfere with the existing components.   
+![](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/AL/20250325111931317.png)
+3. Routing Traces
+Route the electrical connections (traces) between the new component pins and other related pins on the PCB. Follow the design rules for trace width, spacing, and layer usage. For example, make sure that power traces for resistors are wide enough to handle the current.Here, we choose 5V line width 0.8mm, 12V line width 1.6mm, other line width 0.3mm
+![](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/AL/20250325112100290.png)
+4. Ground connection
+Connect all ground interfaces with the "Copper Area" function.
+![](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/AL/20250325112808724.png)
+![](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/AL/20250325112724023.png)
+![](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/AL/20250325112903084.png)
+
+4. PCB Design Review
+Conduct a Design Rule Check (DRC) on the updated PCB design. Check for any violations of trace - to - trace clearance, hole size, and component - to - component spacing.
+### 5.3 Generating Manufacturing Files
+1. Export Gerber Files
+Use LCEDA's export function to generate the Gerber files for the updated PCB design. These files will be sent to the PCB manufacturer for production.
+![](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/AL/20250325113108439.png)
+
+2. Update the Bill of Materials (BOM)
+Update the BOM to include the new components. List their part numbers, values, and quantities accurately. This will help in the procurement of components.
+![](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/AL/20250325113124466.png)
+
+
+

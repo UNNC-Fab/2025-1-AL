@@ -14,6 +14,7 @@
 
 ## 1.Install Git
 - You can download and install Git for Windows from the [official Git website](https://git-scm.com/), or use GitHub Desktop to install Git. Here, I choose the first method.
+- Click [here](https://blog.csdn.net/mukes/article/details/115693833) for a detailed installation tutorial
 
 ## 2.Configure Git
 - When configuring Git, you need to set the username and email address. Run the following commands to set them:
@@ -24,13 +25,14 @@ git config --global user.email "aol1926@outlook.com"
 ```
 ## 3.Set up the website (VitePress)
 - **Install Node.js**
-First, you need to install Node.js. Visit the [official Node.js](https://nodejs.org/zh-cn) website to download and install the latest stable version. Here, I installed version 22.13. After installation, add the ```bin ```directory to the environment variables.
-
+First, you need to install Node.js. Visit the [official Node.js](https://nodejs.org/zh-cn) website to download and install the latest stable version. Here, I installed version 22.13. After installation, add the ```bin ```directory to the environment variables.You can click [here](https://blog.csdn.net/WHF__/article/details/129362462) to get the installation guidance
 - **clone repository**
  Clone the project locally: Use the ```git clone``` command to clone the remote project locally.
+
 ```bash
 git clone https://github.com/UNNC-Fab/2025-1-AL.git
 ```
+![](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/AL/20250324220848278.png)
 - **Install VitePress**
 Run the following command outside the project folder to install VitePress:
 ```bash
@@ -47,9 +49,13 @@ Now, a basic website has been built, and the next step is to populate some conte
 
 - **Populate content**
 VitePress configures the site's basic information through docs/.vitepress/config.ts, including title, description, theme, plugins, navigation bar, sidebar, etc.
-1. I first set the website title to "Fab Academy", which will be displayed on the browser tab.
+1. I first set the website title to "Fab Academy", which will be displayed on the browser tab.Then set the description to "Welcome to Ao Liu's Fab Academy 2025 site!" , modified the tagline to "This is my documentation for the Fab Academy." and modified the features below the page
 2. Next is the top navigation bar, in addition to Home, I added three others: About (which contains my personal introduction), Assignments (which includes my weekly assignments), Project (my final project).
 3. Finally, I set the left sidebar to display "Assignments" and "Project". The content includes the title of my weekly assignments and my final project. Clicking on them will lead to the corresponding interfaces.
+
+After the completion of the above operations, the website home page preview is shown in the following figure.
+![](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/AL/20250324215730391.png)
+The details of the config.mts file are as follows:
 ```bash
 import { defineConfig } from 'vitepress'
 
@@ -86,7 +92,30 @@ export default defineConfig({
 })
 
 ```
-## 4.Deploy to GitLab
+The details of the index.md file are as follows:
+```bash
+---
+# https://vitepress.dev/reference/default-theme-home-page
+layout: home
+
+hero:
+  name: "Fablab Academy"
+  text: "Welcome to Ao Liu's Fab Academy 2025 site!"
+  tagline: This is my documentation for the Fab Academy.
+  actions:
+    - theme: brand
+      text: Get start
+      link: /weeklyassignments/week1
+    - theme: alt
+      text: Contact me 
+      link: /about/about#Contact me
+
+features:
+  - title: Copyright 2025 Ao Liu - Creative Commons Attribution Non Commercial
+    details: This webpage is powered by VitePress.
+---
+```
+## 4.Deploy to GitHab
 - **Use Git to commit and push changes**
 Use Git to commit and push changes to the remote repository on GitHub:
 ```bash

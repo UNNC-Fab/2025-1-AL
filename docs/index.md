@@ -16,6 +16,6 @@ hero:
 
 features:
   - title: Copyright 2025 Ao Liu - Creative Commons Attribution Non Commercial
-    details: This webpage is powered by VitePress ( https://vitepress.vuejs.org/ ).
+    details: This webpage is powered by VitePress.
 ---
 
