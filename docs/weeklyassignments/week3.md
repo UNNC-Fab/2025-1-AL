@@ -7,7 +7,7 @@
 4. Extra credit: design a case around your design
 
 ---
-This week, I plan to design and manufacture an expansion board using Seeed Studio XIAO ESP32-C3, which can accommodate A4988 stepper motor driver, enabling control of stepper motor. Through this practice, I will delve into using LCEDA for PCB design, covering component selection, schematic drawing, circuit layout optimization, and generating 3D views and manufacturing files to ensure the board's producibility and stability.
+For this week's project, I am focusing on developing a custom expansion board based on the Seeed Studio XIAO ESP32-C3 microcontroller. The board is specifically designed to integrate with A4988 stepper motor drivers, providing precise motor control capabilities. This comprehensive PCB design process encompasses everything from component selection and schematic creation to PCB layout optimization and manufacturing file generation, ensuring both functionality and manufacturability of the final product.
 
 ---
 ## PCB Design Process

@@ -27,7 +27,11 @@ export default defineConfig({
           items: [
             { text: 'Week1.Project Management', link: '/weeklyassignments/week1' },
             { text: 'Week2.Embedded Programming', link: '/weeklyassignments/week2' },
-            { text: 'Week3.Electronics Design', link: '/weeklyassignments/week3' }
+            { text: 'Week3.Electronics Design', link: '/weeklyassignments/week3' },
+            { text: 'Week4.Computer-Controlled Cutting', link: '/weeklyassignments/week4' },
+            { text: 'Week5.3D Scanning and Printing', link: '/weeklyassignments/week5' },
+            { text: 'Week6.Electronics Production', link: '/weeklyassignments/week6' },
+            { text: 'Week7.Computer-Controlled Machining', link: '/weeklyassignments/week7' }
           ]
         }
       ]
