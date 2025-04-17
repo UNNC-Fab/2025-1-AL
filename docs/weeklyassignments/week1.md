@@ -115,7 +115,7 @@ features:
     details: This webpage is powered by VitePress.
 ---
 ```
-## 4.Deploy to GitHab
+## 4.Deploy to GitHub
 - **Use Git to commit and push changes**
 Use Git to commit and push changes to the remote repository on GitHub:
 ```bash
@@ -123,6 +123,8 @@ git add --all    # Add all changes
 git commit -m "v1"    # Commit changes
 git push origin main   # Push changes to GitLab
 ```
+![](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/AL/20250417152308555.png)
+![](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/AL/20250417152545500.png)
 - **Configure the ```.gdeploy.yml``` file**
 ```bash
 # Example workflow for building and deploying a VitePress site to GitHub Pages
@@ -192,4 +194,6 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 ```
+![](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/AL/20250417152908536.png)
+
 
