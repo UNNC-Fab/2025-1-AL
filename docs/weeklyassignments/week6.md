@@ -87,14 +87,16 @@ Click the edit icon to adjust filament configuration parameters.
 ![](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/AL/20250416211413399.png)
 ![](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/AL/20250416211425684.png)
 - Process Parameters
+
 | Parameter Type | Range |Description|
 |---------------|---------------|--------------|
-| Layer Height | 0.08-0.28mm |- Small layer height (0.08-0.12mm) suitable for fine models, good surface quality - Medium layer height (0.2mm) suitable for daily printing - Large layer height (0.28mm) suitable for quick printing, sacrificing surface quality|
-| Infill Density | 5-100% |- 5-15%: Decorative items, non-load bearing parts - 20-50%: General functional parts - 50-100%: High-strength requirements|
+| Layer Height | 0.08-0.28mm |- Small layer height (0.08-0.12mm) suitable for fine models, good surface quality\n - Medium layer height (0.2mm) suitable for daily printing\n - Large layer height (0.28mm) suitable for quick printing, sacrificing surface quality|
+| Infill Density | 5-100% |- 5-15%: Decorative items, non-load bearing parts\n - 20-50%: General functional parts\n - 50-100%: High-strength requirements|
 | Print Temperature	| Material dependent |- PLA: 190-220℃ - ABS: 230-250℃ - PETG: 230-240℃ - TPU: 220-235℃|
-| Support Settings | Optional |- Support needed for overhang angles >60° - Support density typically set to 15-30% - Tree or normal support options available|
-| Speed Control	| 20-150mm/s |- Outer walls: 20-40mm/s - Inner walls: 40-60mm/s - Infill: 60-150mm/s - Supports: 60-120mm/s|
-| Cooling Parameter | 0-100% |- PLA: 100% fan - ABS: 0-30% fan - PETG: 50-70% fan - TPU: 30-50% fan|
+| Support Settings | Optional |- Support needed for overhang angles >60°\n - Support density typically set to 15-30%\n - Tree or normal support options available|
+| Speed Control	| 20-150mm/s |- Outer walls: 20-40mm/s\n - Inner walls: 40-60mm/s\n - Infill: 60-150mm/s\n - Supports: 60-120mm/s|
+| Cooling Parameter | 0-100% |- PLA: 100% fan\n - ABS: 0-30% fan - PETG: 50-70% fan\n - TPU: 30-50% fan|
+
 ### Week 4 Design Implementation
 1. Model Import
 Export stl files of all components from Fushion360.
