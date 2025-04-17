@@ -58,7 +58,7 @@ Board and port initialization tutorials are available [here](https://wiki.seeeds
 [wokwi](https://wokwi.com/) is a great website where you can design and test your circuit online.
 ![](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/AL/20250317182323862.png)
 ### 2.3 Servo Control with Ultrasonic Sensor Input
-In this exercise, i have tried to use ultrasonic sensor as input to trigger a servo motor to rotate. This interaction happens when an object enter or leave the sensor's detection range.
+In this exercise, I have tried to use ultrasonic sensor as input to trigger a servo motor to rotate. This interaction happens when an object enters or leaves the sensor's detection range.
 ![](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/AL/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20250317213139.jpg)
 I have first designed the circuit online then write the code and deployed on it.
 ![](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/AL/20250320173700676.png)
@@ -104,6 +104,6 @@ void loop() {
   delay(100);
 }
 ```
-Final result is that when an obstacle is approching near to the Ultrasonic Sensor then servo motor will rotate from 0 to 180 degree clockwise depending on the distance bewteen the obstacle and the sensor.(when the distance is 2cm, the servo will rotate to 0 degree, when the distance is 100cm, the servo will rotate to 180 degree)
+Final result is that when an obstacle is approaching near to the Ultrasonic Sensor, the servo motor will rotate from 0 to 180 degrees clockwise depending on the distance between the obstacle and the sensor (when the distance is 2cm, the servo will rotate to 0 degrees, when the distance is 100cm, the servo will rotate to 180 degrees).
 ![](https://unncfab.oss-cn-hangzhou.aliyuncs.com/img/AL/20250317214259638.png)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IcWiZKmkxjE?si=2FcdbHPBNEDrSf-B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
