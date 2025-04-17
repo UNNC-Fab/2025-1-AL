@@ -9,6 +9,7 @@ Design and fabricate an object with the following specifications:
 - Time: Optimize for efficient print duration.
 ---
 This week, I explored practical applications of additive manufacturing technology. Initially, I performed design rule testing on the 3D printer to ensure its printing precision and quality met requirements. Then, I successfully materialized the model designed in week four using 3D printing technology. Furthermore, I mastered basic 3D scanning technology operations and used the SHINING 3D EinStar series handheld 3D scanner to scan the upper body of a person, experiencing firsthand the process of converting physical objects into digital models.
+
 ---
 ## 3D Scanning
 Throughout my hands-on experience with 3D scanning technology, I utilized a professional handheld scanner from the EinStar series, which employs advanced blue light structured illumination for precise 3D data acquisition. This sophisticated device demonstrated remarkable capabilities in capturing detailed three-dimensional information swiftly and accurately. For my practical application, I focused on digitizing the upper torso of a human subject, successfully creating a detailed digital representation of the physical form.
